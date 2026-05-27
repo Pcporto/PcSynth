@@ -6,44 +6,45 @@
               companyCopyright="PcPorto" pluginCharacteristicsValue="pluginWantsMidiInput,pluginProducesMidiOutput,pluginIsSynth"
               pluginName="PcSynth" pluginDesc="Síntese Modal Aditiva Espectral" pluginManufacturer="PcPorto"
               pluginManufacturerCode="PcPo" pluginCode="PcSy" pluginChannelConfigs="{2, 2}"
-              pluginVST3Category="Instrument,Synth" aaxIdentifier="com.pcporto.pcsynth">
+              pluginVST3Category="Instrument,Synth" aaxIdentifier="com.pcporto.pcsynth"
+              jucePath="../../../JUCE">
   <MAINGROUP id="root" name="PcSynth">
     <GROUP id="{B2A9355D-D96F-4A01-8D29-35B5FF83FF12}" name="Source">
-      <FILE id="modalOscillator_h" name="ModalOscillator.h" compile="0" resource="0"
+      <FILE id="ModalOscillator_h" name="ModalOscillator.h" compile="0" resource="0"
             file="Source/ModalOscillator.h"/>
-      <FILE id="modalOscillator_cpp" name="ModalOscillator.cpp" compile="1" resource="0"
+      <FILE id="ModalOscillator_cpp" name="ModalOscillator.cpp" compile="1" resource="0"
             file="Source/ModalOscillator.cpp"/>
-      <FILE id="pluginProcessor_h" name="PluginProcessor.h" compile="0" resource="0"
+      <FILE id="PluginProcessor_h" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="pluginProcessor_cpp" name="PluginProcessor.cpp" compile="1" resource="0"
+      <FILE id="PluginProcessor_cpp" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
-      <FILE id="pluginEditor_h" name="PluginEditor.h" compile="0" resource="0"
+      <FILE id="PluginEditor_h" name="PluginEditor.h" compile="0" resource="0"
             file="Source/PluginEditor.h"/>
-      <FILE id="pluginEditor_cpp" name="PluginEditor.cpp" compile="1" resource="0"
+      <FILE id="PluginEditor_cpp" name="PluginEditor.cpp" compile="1" resource="0"
             file="Source/PluginEditor.cpp"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
   <EXPORTFORMATS>
-    <VS2022 targetFolder="Builds/VisualStudio2026">
+    <VS2022 targetFolder="Builds/VisualStudio2022">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="PcSynth"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="PcSynth" optimisationLevel="3"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_audio_basics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_devices" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_formats" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_plugin_client" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_processors" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_audio_utils" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_core" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_data_structures" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_dsp" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_events" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_graphics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_basics" path="../../JUCE/modules"/>
-        <MODULEPATH id="juce_gui_extra" path="../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_plugin_client" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_dsp" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
       </MODULEPATHS>
     </VS2022>
   </EXPORTFORMATS>
